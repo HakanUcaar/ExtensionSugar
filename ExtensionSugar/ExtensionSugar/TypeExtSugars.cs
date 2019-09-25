@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace ExtensionSugar
 {
-    public static class TypeExtSugar
+    public static class TypeExtSugars
     {
         public static Boolean IsDouble(this Type aType)
         {
@@ -109,7 +109,7 @@ namespace ExtensionSugar
             if (targetType == null)
                 throw new NullReferenceException();
 
-            var mi = typeof(TypeExtSugar)
+            var mi = typeof(TypeExtSugars)
                 .GetMethod("_ToDefaultHelper", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
 
             var generic = mi.MakeGenericMethod(targetType);
