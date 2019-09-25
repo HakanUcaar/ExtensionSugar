@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ExtensionSugar</id>
+    <version>1.0.1</version>
+    <title>ExtensionSugar</title>
+    <authors>Hakan Uçar</authors>
+    <owners>Hakan Uçar</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Yardımcı küçük kod şekerlemeleri</description>
+    <releaseNotes>String, Type ve Generic için yeni şekerler eklendi</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>Extension LambdaExtension Useful</tags>
+  </metadata>
+  <files>
+	<file src="bin\Debug\ExtensionSugar.dll" target="lib"></file>
+  </files>
+</package>
