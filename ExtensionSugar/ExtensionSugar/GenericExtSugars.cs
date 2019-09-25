@@ -8,21 +8,21 @@ namespace ExtensionSugar
 {
     public static class GenericExtSugars
     {
+        public static bool IsNull<T>(this T obj) 
+        {
+            return obj == null;
+        }
+        public static bool IsNotNull<T>(this T obj) 
+        {
+            return obj != null;
+        }
         public static T With<T>(this T item, Action<T> action)
         {
-            if (item != null)
+            if (item.IsNotNull())
             {
                 action(item);
             }
             return item;
-        }
-        public static bool IsNull<T>(this T obj) where T : class
-        {
-            return obj == null;
-        }
-        public static bool IsNotNull<T>(this T obj) where T : class
-        {
-            return obj != null;
         }
 
         public static bool In<T>(this T obj, params T[] args)
@@ -45,7 +45,7 @@ namespace ExtensionSugar
         public static T ReturnSelf<T>(this T Input, Func<T, bool> check, T failureValue)
             where T : class
         {
-            if (Input == null) return failureValue;
+            if (Input.IsNull()) return failureValue;
             try
             {
                 return check(Input) ? Input : failureValue;
