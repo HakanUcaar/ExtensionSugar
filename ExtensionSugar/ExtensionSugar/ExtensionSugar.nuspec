@@ -6,9 +6,9 @@
     <title>ExtensionSugar</title>
     <authors>Hakan Uçar</authors>
     <owners>Hakan Uçar</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/HakanUcaar/ExtensionSugar</projectUrl>
+    <iconUrl></iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Yardımcı küçük kod şekerlemeleri</description>
     <releaseNotes>String, Type ve Generic için yeni şekerler eklendi</releaseNotes>
