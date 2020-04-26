@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttributeExtSugar.cs" />
+    <Compile Include="DateTimeExtSugars.cs" />
     <Compile Include="EnumExtSugars.cs" />
     <Compile Include="GenericExtSugars.cs" />
     <Compile Include="PathExtSugars.cs" />
