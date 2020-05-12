@@ -45,6 +45,8 @@
     <Compile Include="EnumExtSugars.cs" />
     <Compile Include="GenericExtSugars.cs" />
     <Compile Include="PathExtSugars.cs" />
+    <Compile Include="ReflectionExtSugars.cs" />
+    <Compile Include="ResourceExtSugars.cs" />
     <Compile Include="StringExtSugars.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TypeExtSugars.cs" />

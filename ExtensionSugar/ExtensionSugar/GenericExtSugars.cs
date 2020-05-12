@@ -25,6 +25,10 @@ namespace ExtensionSugar
             }
             return obj != null;
         }
+        public static T IfNull<T>(this T obj, object failure)
+        {
+            return obj.IsNotNull() ? obj : failure.To<T>();
+        }
 
         public static T With<T>(this T item, Action<T> action)
         {
@@ -73,11 +77,11 @@ namespace ExtensionSugar
                 return failureValue;
             }
         }
-        public static T To<T>(this object o) where T : class
+        public static T To<T>(this object o) 
         {
             try
             {
-                return o as T;
+                return (T)o;
             }
             catch (Exception)
             {
